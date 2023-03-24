@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap);
+
 :root {
     --dgray: #262626; 
 }
@@ -13,32 +15,31 @@ header{
 
 body{
     margin: 0;
+    background-color: var(--dgray);
 }
 
 .wtext{
     color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Press Start 2P'
 }
 
 .btext{
     color: black;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Press Start 2P'
 }
 
-.interact-section{
-    display: flex;
-    flex-flow: column;
-}
-
-.interact-section1{
+.sec0{
     display: flex;
     flex-flow: column;
     align-items: center;
 }
 
-.sec{
-    justify-content: center;
+.sec2{
     display: flex;
+}
+
+.sec1{
+    margin-bottom: 10px;
 }
 
 .score-txt{
@@ -47,7 +48,10 @@ body{
 
 input{
     height: 50px;
-    width: 200px;
+    width: 110px;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
 }
 
 main{
@@ -56,14 +60,29 @@ main{
     background-color: var(--dgray);
     display: grid;
     height: 500px;
-    width: 100%;
-    grid-template-columns: 50%, 50%;
+    grid-template-columns: 1fr 1fr;
     grid-auto-flow: column;
+    border-top: 5px solid white;
+}
+
+footer{
+    background-color: var(--dgray);
+    height: 100%;
+}
+
+footer p {
+    color: white;
+    font-family: 'Press Start 2P';
+    text-align: center;
+}
+
+main::after{
+    background-color: var(--dgray);
 }
 
 .my-box{
     position: absolute;
-    margin-top: 150px;
+    margin-top: 155px;
     background-color: white;
     height: 50px;
     width: 150px;
@@ -75,11 +94,11 @@ main{
     font-weight: 700;
     height: 50px;
     margin: 0;
-    padding: 5px;
+    padding: 10px;
 }
 
 .again-button{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Press Start 2P';
     background-color: white;
     border: 2px solid white;
     height: 40px;
@@ -93,10 +112,11 @@ main{
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
+    font-family: 'Press Start 2P';
 }
 
 .check-button{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Press Start 2P';
     background-color: white;
     border: 2px solid white;
     margin-top: 10px;
@@ -113,4 +133,5 @@ main{
 .guess{
     margin-top: 100px;
     color: white;
+    font-family: 'Press Start 2P';
 }
