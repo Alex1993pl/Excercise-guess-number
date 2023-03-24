@@ -55,7 +55,7 @@ input{
 }
 
 main{
-    margin-top: 5px;
+    margin-top: 0px;
     padding-top: 50px;
     background-color: var(--dgray);
     display: grid;
@@ -76,13 +76,9 @@ footer p {
     text-align: center;
 }
 
-main::after{
-    background-color: var(--dgray);
-}
-
 .my-box{
     position: absolute;
-    margin-top: 155px;
+    margin-top: 150px;
     background-color: white;
     height: 50px;
     width: 150px;
